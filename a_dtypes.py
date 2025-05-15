@@ -21,3 +21,30 @@ print("-" * 10)
 
 for el in a:
     print(el)
+
+
+#Dictionaries
+print("-----Dicitionary-----")
+b = {
+    "id":1234,
+    "name":"John",
+    "hobbies" :["reading", "travel"],
+    "email": {
+        "em1": "john@em.com",
+        "em2": "j@em.com"
+    }
+}
+
+print(b["name"])
+k = "id"
+print(b[k])
+
+for el in b:
+    print(el," = ", b[el], type(b[el]))
+
+print("---Access dict in dic ---")
+print("Email 2:", b["email"]["em2"])
+print(dir(b))
+print("---Keys Present in a dict---")
+print(b.keys())
+
